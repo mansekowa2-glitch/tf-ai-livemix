@@ -1,0 +1,28 @@
+{
+  "layerName": "Sunday Main Mix",
+  "items": [
+    { "id": "pastor1", "type": "channel", "label": "Pastor 1", "tfChannel": 23, "usbChannel": 22,
+      "ai": { "enabled": true, "baseDb": -10, "maxBoostDb": 4, "minDb": -60, "maxDb": 5 } },
+
+    { "id": "pastor2", "type": "channel", "label": "Pastor 2", "tfChannel": 24, "usbChannel": 23,
+      "ai": { "enabled": true, "baseDb": -12, "maxBoostDb": 4, "minDb": -60, "maxDb": 5 } },
+
+    { "id": "vox", "type": "group", "label": "VOX",
+      "members": [
+        { "tfChannel": 1, "weight": 1.0 },
+        { "tfChannel": 2, "weight": 0.8 },
+        { "tfChannel": 3, "weight": 0.8 }
+      ],
+      "ai": { "enabled": true, "duckDbMax": 2.0, "minDb": -60, "maxDb": 10 } },
+
+    { "id": "band", "type": "group", "label": "BAND",
+      "members": [
+        { "tfChannel": 9, "weight": 0.3 },
+        { "tfChannel": 10, "weight": 0.3 },
+        { "tfChannel": 11, "weight": 0.7 },
+        { "tfChannel": 12, "weight": 1.0 }
+      ],
+      "ai": { "enabled": true, "duckDbMax": 3.0, "minDb": -60, "maxDb": 10 } }
+  ],
+  "limits": { "maxDbPerSec": 2.0 }
+}
