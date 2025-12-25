@@ -1,0 +1,21 @@
+# Node
+node_modules/
+dist/
+.next/
+out/
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Local config (do not commit real church mapping)
+shared/config/custom-layer.json
+.env
