@@ -2,11 +2,13 @@
   "compilerOptions": {
     "target": "ES2022",
     "module": "ES2022",
-    "moduleResolution": "node",
+    "moduleResolution": "nodenext",   // enables Node ESM resolution
     "outDir": "dist",
     "strict": true,
     "esModuleInterop": true,
-    "types": ["node"]
+    "types": ["node"],               // pulls in Node’s type definitions
+    "noImplicitAny": false           // (optional) allow untyped callback parameters
   },
   "include": ["src"]
 }
+
